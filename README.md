@@ -1,4 +1,4 @@
-# Northstar Supply
+# KhoaiLaptop Supply
 
 A self-contained ecommerce storefront for laptops, PC components, and desk gear.
 
