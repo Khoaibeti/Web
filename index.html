@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KhoaiLaptop| Laptop & PC gear</title>
+  <meta name="description" content="Curated laptops, components, and desk gear for focused work and play.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="announcement">Free shipping on orders over $750 <span>•</span> 30-day returns</div>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="KhoaiLaptop home"><span class="brand-mark">K</span><span>KHOAILAPTOP<span class="brand-light">SUPPLY</span></span></a>
+      <div class="nav-links"><a href="#shop">Shop</a><a href="#categories">Categories</a><a href="#about">Our standard</a></div>
+      <div class="nav-actions"><a class="account-link" href="Login.html">Account</a><button class="icon-button" aria-label="Search" id="search-button">⌕</button><button class="cart-button" id="cart-button" aria-label="Open cart">Cart <span id="cart-count">0</span></button></div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-copy reveal"><p class="eyebrow">THE BETTER WORKSTATION</p><h1>Build a setup<br><em>worth staying for.</em></h1><p class="hero-text">Thoughtfully picked laptops, components, and desk gear for the way you work, create, and play.</p><a class="primary-button" href="#shop">Explore the collection <span>↗</span></a></div>
+      <div class="hero-art reveal"><div class="hero-label">01 / 04</div><img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1200&q=85" alt="Open laptop on a clean desk"><div class="art-note">ENGINEERED FOR<br><strong>THE LONG RUN</strong></div></div>
+    </section>
+
+    <section class="ticker"><div>WORK SMARTER <span>✦</span> PLAY LONGER <span>✦</span> STAY CURIOUS <span>✦</span> WORK SMARTER <span>✦</span> PLAY LONGER <span>✦</span> STAY CURIOUS</div></section>
+
+    <section class="category-section container" id="categories"><div class="section-heading"><div><p class="eyebrow">START HERE</p><h2>Find your next<br>favorite machine.</h2></div><p class="section-intro">The right tools disappear into the work. We make finding them feel visible.</p></div><div class="category-grid"><a class="category-card category-laptop" href="#shop" data-filter="Laptops"><span>01</span><h3>Laptops</h3><p>Portable power, zero compromise.</p><b>Shop now ↗</b></a><a class="category-card category-parts" href="#shop" data-filter="Components"><span>02</span><h3>Components</h3><p>Make your build unmistakably yours.</p><b>Shop now ↗</b></a><a class="category-card category-desk" href="#shop" data-filter="Desk gear"><span>03</span><h3>Desk gear</h3><p>Small upgrades. Big difference.</p><b>Shop now ↗</b></a></div></section>
+
+    <section class="products-section" id="shop"><div class="container"><div class="section-heading product-heading"><div><p class="eyebrow">THE SHORTLIST</p><h2>Good gear,<br>no guesswork.</h2></div><div class="filters" role="group" aria-label="Filter products"><button class="filter active" data-filter="All">All</button><button class="filter" data-filter="Laptops">Laptops</button><button class="filter" data-filter="Components">Components</button><button class="filter" data-filter="Desk gear">Desk gear</button></div></div><div class="product-grid" id="product-grid"></div></div></section>
+
+    <section class="standard container" id="about"><div class="standard-image"><img src="https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=1000&q=85" alt="Laptop and accessories on a table"></div><div class="standard-copy"><p class="eyebrow">OUR STANDARD</p><h2>We only sell what we'd use ourselves.</h2><p>Every product earns its place through real-world testing, honest specs, and a simple question: does it make your day better?</p><div class="standard-list"><div><strong>01</strong><span>Tested in the real world</span></div><div><strong>02</strong><span>Clear, human advice</span></div><div><strong>03</strong><span>Support after checkout</span></div></div></div></section>
+  </main>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true"><div class="drawer-head"><h2>Your cart</h2><button class="close-button" id="close-cart" aria-label="Close cart">×</button></div><div id="cart-items" class="cart-items"><p class="empty-cart">Your cart is ready when you are.</p></div><div class="cart-footer"><div><span>Subtotal</span><strong id="cart-total">$0</strong></div><button class="primary-button checkout-button">Checkout <span>↗</span></button></div></aside><div class="overlay" id="overlay"></div>
+  <footer class="footer"><div class="container"><div class="footer-top"><a class="brand" href="#top"><span class="brand-mark">N</span><span>NORTHSTAR<span class="brand-light">SUPPLY</span></span></a><p>Tools for the curious.</p><div class="footer-links"><a href="#shop">Shop</a><a href="#about">About</a><a href="mailto:hello@northstarsupply.test">Contact</a></div></div><div class="footer-bottom"><span>© 2026 Northstar Supply</span><span>Built for the long run.</span></div></div></footer>
+  <script src="database/products.js"></script><script src="utils/store.js"></script><script src="script.js"></script>
+</body>
+</html>
